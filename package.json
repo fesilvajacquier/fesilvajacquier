@@ -1,0 +1,28 @@
+{
+  "name": "fesilvajacquier",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "shoelace:copy-assets": "mkdir -p src/shoelace-assets && cp -r node_modules/@shoelace-style/shoelace/dist/assets src/shoelace-assets",
+    "esbuild": "yarn shoelace:copy-assets && node esbuild.config.js --minify",
+    "esbuild-dev": "yarn shoelace:copy-assets && node esbuild.config.js --watch"
+  },
+  "devDependencies": {
+    "cssnano": "^6.0.1",
+    "esbuild": "^0.17.19",
+    "glob": "^10.2.6",
+    "postcss": "^8.4.23",
+    "postcss-color-mod-function": "^3.0.3",
+    "postcss-flexbugs-fixes": "^5.0.2",
+    "postcss-import": "^15.1.0",
+    "postcss-load-config": "^4.0.1",
+    "postcss-mixins": "^9.0.4",
+    "postcss-preset-env": "^8.4.1",
+    "read-cache": "^1.0.0"
+  },
+  "dependencies": {
+    "@hotwired/turbo": "^7.3.0",
+    "@shoelace-style/shoelace": "^2.5.2",
+    "turbo-shadow": "^1.1.0"
+  }
+}
