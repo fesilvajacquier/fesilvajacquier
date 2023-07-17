@@ -1,3 +1,4 @@
 <footer>
-  Contact me at <a href="mailto:{{ metadata.email }}">{{ metadata.email }}</a>
+  <p>You can find me around by the same handle</p>
+  <p><strong>{{ metadata.title }}</strong></p>
 </footer>
