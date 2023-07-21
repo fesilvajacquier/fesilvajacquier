@@ -32,6 +32,7 @@ const build = require("./config/esbuild.defaults.js")
  * @type {BuildOptions}
  */
 const esbuildOptions = {
+  publicPath: "/",
   plugins: [
     // add new plugins here...
   ],
