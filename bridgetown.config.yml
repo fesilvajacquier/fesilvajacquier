@@ -32,3 +32,9 @@ base_path: "/" # the subpath of your site, e.g. /blog. If you set this option,
 # timezone: America/Los_Angeles
 # pagination:
 #   enabled: true
+
+collections:
+  tixs:
+    output: true
+    permalink: pretty
+    future: true
