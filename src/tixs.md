@@ -17,7 +17,7 @@ TIXs are:
 It is a way to keep track of the things I wished I had known earlier, the things that demanded me more than ~30 minutes to discover / learn and that I suspect that eventually I will need to get back to them.
 
 <ul>
-  {% collections.tixs.resources.each do |tix| %}
+  {% collections.tixs.resources.reverse.each do |tix| %}
     <li>
       <a href="{{ tix.relative_url }}">{{ tix.data.title }}</a>
     </li>
