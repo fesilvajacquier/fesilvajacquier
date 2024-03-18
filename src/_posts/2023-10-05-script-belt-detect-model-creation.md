@@ -55,7 +55,7 @@ detect_model_creation(Payment)
 
 ## How to Use It
 
-I simply add this function to your `test_helper.rb` and call `detect_model_creation` with the model class I'm interested in. For example, to track the creation of `Payment` instances, I call `detect_model_creation(Payment)`.
+Simply add this function to your `test_helper.rb` and call `detect_model_creation` with the model class I'm interested in. For example, to track the creation of `Payment` instances, I call `detect_model_creation(Payment)`.
 
 ## Conclusion
 
