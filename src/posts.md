@@ -1,10 +1,12 @@
 ---
 layout: page
 title: Posts
+paginate:
+  collection: posts
 ---
 
 <ul>
-  {% collections.posts.resources.each do |post| %}
+  {% for post in paginator.resources %}
     <li>
       <a href="{{ post.relative_url }}">{{ post.data.title }}</a>
     </li>

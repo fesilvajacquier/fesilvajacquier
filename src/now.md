@@ -5,7 +5,7 @@ title: What am I doing now?
 
 Important things first, right?
 
-I am enjoying life with my partner, Sonia.
+I am enjoying life with my wife, Sonia.
 
 I play football with friends and train. To keep everything in balance, I am also constantly looking for new flavours, new places to eat and new things to cook (Just an euphemism to say that I like, a lot,  to eat, a lot).
 

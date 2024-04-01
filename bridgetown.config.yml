@@ -30,8 +30,8 @@ base_path: "/" # the subpath of your site, e.g. /blog. If you set this option,
 # update `publicPath`.
 
 # timezone: America/Los_Angeles
-# pagination:
-#   enabled: true
+pagination:
+  enabled: true
 
 collections:
   tixs:

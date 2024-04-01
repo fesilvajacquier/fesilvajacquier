@@ -8,6 +8,24 @@
 
     <main>
       {%= yield %}
+      {% if resource.data.paginate %}
+        {% if paginator.total_pages > 1 %}
+          <nav>
+            <ul>
+              {% if paginator.previous_page %}
+              <li>
+                <a href="{{ paginator.previous_page_path }}">Previous Page</a>
+              </li>
+              {% end %}
+              {% if paginator.next_page %}
+              <li>
+                <a href="{{ paginator.next_page_path }}">Next Page</a>
+              </li>
+              {% end %}
+            </ul>
+          </nav>
+        {% end %}
+      {% end %}
     </main>
 
     {%@ "footer", metadata: site.metadata %}
