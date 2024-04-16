@@ -1,8 +1,7 @@
 ---
 layout: post
-title: missing an index
+title: Missing an index
 date: 2023-07-21
-category: til
 ---
 
 ## Origin (context)

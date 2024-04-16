@@ -1,29 +1,29 @@
 /* Import the base Shoelace stylesheet: */
-@import "@shoelace-style/shoelace/dist/themes/light.css";
+@import "@shoelace-style/shoelace/dist/themes/dark.css";
 
 :root {
-  --body-background: #f2f2f2;
-  --body-color: #444;
-  --heading-color: black;
-  --action-color: #d64045;
+  /* --body-background: #f2f2f2; */
+  --body-color: #d4d4d4;
+  --heading-color: white;
+  /* --action-color: #d64045; */
 }
 
 body {
-  background: var(--body-background);
+  /* background: var(--body-background); */
   color: var(--body-color);
   font-family: BlinkMacSystemFont, -apple-system, "Segoe UI", "Roboto", "Oxygen",
     "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     "Helvetica", "Arial", sans-serif;
   margin: 0 8px;
-  font-size: 108%;
+  font-size: 1.5rem;
   line-height: 1.5;
 }
 
-a {
+/* a {
   color: var(--action-color);
   text-decoration: underline;
   text-decoration-color: #ffb088;
-}
+} */
 
 h1 {
   margin: 1rem 0 3rem;
@@ -39,11 +39,11 @@ body > header {
   text-align: center;
 }
 
-body > header img {
+/* body > header img {
   display: inline-block;
   width: 400px;
   max-width: 100%;
-}
+} */
 
 body > nav ul {
   margin: 2rem 0;
@@ -65,8 +65,8 @@ main {
   max-width: 65rem;
   min-height: calc(100vh - 200px);
   padding: 25px 25px 50px;
-  background: white;
-  box-shadow: 2px 3px 3px #ddd;
+  /* background: white; */
+  /* box-shadow: 2px 3px 3px #ddd; */
   border-radius: 3px;
 
   @media (max-width: 500px) {
@@ -84,4 +84,8 @@ hr {
   border: none;
   border-top: 2px dotted #bbb;
   margin: 3rem 0;
+}
+
+small {
+	font-size: 1rem;
 }

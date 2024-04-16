@@ -1,8 +1,7 @@
 ---
 layout: post
-title: curl timeout
+title: curl Timeout
 date: 2023-07-21
-category: til
 ---
 
 ## Origin (context)
