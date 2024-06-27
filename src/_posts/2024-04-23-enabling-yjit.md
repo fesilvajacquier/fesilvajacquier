@@ -26,6 +26,8 @@ The why yes list included:
 
 ## How
 
+### On the server(s)
+
 My Ruby on Rails (Ruby 3.3.0 -via `rbenv`-) app was running on an Ubuntu server.
 So, what I did was:
 
@@ -63,6 +65,20 @@ Finally, I installed Ruby with YJIT.
 
 ```shell
 RUBY_CONFIGURE_OPTS="--enable-yjit" rbenv install 3.3.0
+```
+
+### On the app
+
+I just added the initializer to enable YJIT (taken from the PR mentioned above ☝️).
+
+```ruby
+# config/initializers/enable_yjit.rb
+
+if defined? RubyVM::YJIT.enable
+  Rails.application.config.after_initialize do
+    RubyVM::YJIT.enable
+  end
+end
 ```
 
 ## Conclusion
